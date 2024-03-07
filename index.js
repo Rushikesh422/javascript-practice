@@ -45,6 +45,7 @@ function getCookie()
 }
 
 function handleClick() {
-    setCookie("exampleCookie", "cookieValue", 30); // Set a cookie named "exampleCookie" with a value "cookieValue" that expires in 30 days
+    let cookieusername = document.getElementById("cookiename").value;
+    setCookie("UserNameCookie", cookieusername, 30); // Set a cookie named "exampleCookie" with a value "cookieValue" that expires in 30 days
     alert("Cookie set successfully!");
 }
