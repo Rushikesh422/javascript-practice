@@ -31,10 +31,11 @@ function getCookie()
     //document.cookie = "username=Rushikesh Satpute";
     let cookieList = document.cookie;
     console.log("Start of getCookie Method!");
+    console.log("Cookie Lenght: "+ cookieList.length);
     if(cookieList.length != undefined)
     {
-        document.getElementById("getcookie").innerHTML = cookieList;
-        document.getElementById("getcookie").innerHTML = "CookiesList"+ cookieList;
+        //document.getElementById("getcookie").innerHTML = cookieList;
+        document.getElementById("getcookie").innerHTML = "CookiesList : " + String(cookieList);
     }
     else
     {
