@@ -34,7 +34,7 @@ function getCookie()
     if(cookieList.length != undefined)
     {
         document.getElementById("getcookie").innerHTML = cookieList;
-        document.getElementById("getcookie").innerHTML = "CookiesList";
+        document.getElementById("getcookie").innerHTML = "CookiesList"+ cookieList;
     }
     else
     {
@@ -44,7 +44,8 @@ function getCookie()
     console.log("End of getCookie Method!");
 }
 
-function handleClick() {
+function handleClick() 
+{
     let cookieusername = document.getElementById("cookiename").value;
     setCookie("UserNameCookie", cookieusername, 30); // Set a cookie named "exampleCookie" with a value "cookieValue" that expires in 30 days
     alert("Cookie set successfully!");
